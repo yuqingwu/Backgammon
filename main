@@ -1,0 +1,26 @@
+//main.cpp
+#include"ChessBoard.h"
+#include"Player.h"
+ 
+int main()
+{
+    ChessBoard board;   
+    Player playA("aaa",'*');//Players aaa piece shape is'*'
+    playA.attachToBoard(&board);
+    Player playB("bbb",'#');//Players bbb piece shape is'#'
+    playB.attachToBoard(&board);    
+    board.show();
+    while(1)
+    {
+        playA.setChess();//Player A drop a piece
+        if(playA.isWin())
+        {   cout<<"Winer!"; break;}       
+        board.show();
+ 
+        playB.setChess();//Player B to put down a piece
+        if(playB.isWin())
+        {   cout<<"Winer!"; break;}   
+        board.show();
+    }
+    return 1;
+}

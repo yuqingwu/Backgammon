@@ -1,4 +1,3 @@
-//ChessBoard.cpp
 #include"ChessBoard.h"
  
 ChessBoard::ChessBoard()    
@@ -17,7 +16,7 @@ void ChessBoard::show()
     system("cls");  
     for(int i=0;i<ROW;i++)
     {   for(int j=0;j<COL;j++)
-            cout<<m_cSquare[i][j]<<' ';//here“ <<' ' ”It is important, in order to make on-screen ROW * COL output square
+            cout<<m_cSquare[i][j]<<' ';
         cout<<endl;
     }
 }

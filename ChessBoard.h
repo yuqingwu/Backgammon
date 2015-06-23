@@ -1,4 +1,3 @@
-//ChessBoard.h
 #pragma once
 #define ROW 15
 #define COL 15

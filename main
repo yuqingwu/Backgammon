@@ -1,4 +1,3 @@
-//main.cpp
 #include"ChessBoard.h"
 #include"Player.h"
  

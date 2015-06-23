@@ -1,4 +1,3 @@
-//Player.h
 #pragma once
 //Four macros detect five children together into line direction
 #define HORIZON         0

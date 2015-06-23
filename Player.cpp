@@ -1,4 +1,3 @@
-//Player.cpp
 #include"Player.h"
  
 bool Player::isInChessBoard(int x,int y)
@@ -8,15 +7,12 @@ bool Player::isInChessBoard(int x,int y)
     else
         return false;
 }
-/*Here is the core code: How to determine whether even a line of five children.
-Players used here is down at the moment as the center piece, it is determined whether or not one by one from four directions in this direction even become line
-Here the judge four directions are put together, to avoid the judgment call four different directions,
-But for there to put a little awkward switch on readability seems bad*/
+
 bool Player::isLine(int x,int y)
 {
     for(int direc=HORIZON;direc<=LEFTTOPTORIGHTBOTTOM;direc++)//Four directions, expediency
     {
-        int tempX,tempY,cnt=1;//cnt:The number of continuously arranged pieces of the same kind, to the party won five
+        int tempX,tempY,cnt=1;
         for(int i=-4;i<=4;i++)
         {
             if(i==0)continue;//At this point the cycle again equivalent to doing nothing
